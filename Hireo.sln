@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Api", "Hireo.Api\Hireo.Api.csproj", "{79C18866-55D3-4DE6-9F02-BE3247D723B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Application", "Hireo.Application\Hireo.Application.csproj", "{BA5E3E8D-0434-4EAC-9FAF-F0106DF5DCB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Domain", "Hireo.Domain\Hireo.Domain.csproj", "{924F1C92-056B-47BA-B006-B299E918BA3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Infrastructure", "Hireo.Infrastructure\Hireo.Infrastructure.csproj", "{117C1AA3-7058-4676-B5CA-5D118FD4174A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Infrastructure.Migrations", "Hireo.Infrastructure.Migrations\Hireo.Infrastructure.Migrations.csproj", "{E31C624E-6E76-474F-838A-FEC469977F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Toolkit", "Hireo.Toolkit\Hireo.Toolkit.csproj", "{AFBD75B9-2601-426B-BCB2-94B420703C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hireo.Site", "Hireo.Site\Hireo.Site.csproj", "{A798458A-385F-4060-9D58-B0E919B30BBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79C18866-55D3-4DE6-9F02-BE3247D723B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C18866-55D3-4DE6-9F02-BE3247D723B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C18866-55D3-4DE6-9F02-BE3247D723B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C18866-55D3-4DE6-9F02-BE3247D723B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5E3E8D-0434-4EAC-9FAF-F0106DF5DCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5E3E8D-0434-4EAC-9FAF-F0106DF5DCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5E3E8D-0434-4EAC-9FAF-F0106DF5DCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5E3E8D-0434-4EAC-9FAF-F0106DF5DCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924F1C92-056B-47BA-B006-B299E918BA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924F1C92-056B-47BA-B006-B299E918BA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924F1C92-056B-47BA-B006-B299E918BA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924F1C92-056B-47BA-B006-B299E918BA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C1AA3-7058-4676-B5CA-5D118FD4174A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C1AA3-7058-4676-B5CA-5D118FD4174A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C1AA3-7058-4676-B5CA-5D118FD4174A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C1AA3-7058-4676-B5CA-5D118FD4174A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31C624E-6E76-474F-838A-FEC469977F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31C624E-6E76-474F-838A-FEC469977F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31C624E-6E76-474F-838A-FEC469977F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31C624E-6E76-474F-838A-FEC469977F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFBD75B9-2601-426B-BCB2-94B420703C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBD75B9-2601-426B-BCB2-94B420703C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBD75B9-2601-426B-BCB2-94B420703C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBD75B9-2601-426B-BCB2-94B420703C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A798458A-385F-4060-9D58-B0E919B30BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A798458A-385F-4060-9D58-B0E919B30BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A798458A-385F-4060-9D58-B0E919B30BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A798458A-385F-4060-9D58-B0E919B30BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0800E502-D1B4-4323-A42A-630499097477}
+	EndGlobalSection
+EndGlobal
