@@ -1,0 +1,133 @@
+header
+{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 82px;
+  z-index: 1000;
+
+  font-size: 16px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.left-side
+{
+  display: flex;
+  margin-left: 35px;
+}
+
+#logo
+{
+  display: flex;
+  align-items: center;
+
+  padding-right: 35px;
+  margin-right: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+#logo img
+{
+  height: 42px;
+  cursor: pointer;
+}
+
+#navigation
+{
+  display: flex;
+  align-items: center;
+}
+
+#navigation ul
+{
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+#navigation li
+{
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#navigation a
+{
+  padding: 7px 9px;
+  color: #666;
+  transition: 0.3s;
+}
+
+#navigation a::after
+{
+  position: relative;
+  top: 2px;
+
+  font-family: 'Material-Icons';
+  background-color: #f0f0f0;
+  content: '\e914';
+  color: #a8a8a8;
+
+  border-radius: 3px;
+  margin-left: 7px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#navigation li:hover a,
+#navigation li:hover a::after
+{
+  color: #2a41e8;
+}
+
+#navigation li:hover a::after
+{
+  background-color: rgba(42, 65, 232, 0.13);
+}
+
+.right-side
+{
+  display: flex;
+  margin-right: 35px;
+}
+
+.header-widget
+{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-left: 1px solid #e0e0e0;
+}
+
+.log-in-button
+{
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.log-in-button:hover,
+.log-in-button:hover .icon-log-in
+{
+  color: #2a41e8;
+}
+
+.icon-log-in
+{
+  position: relative;
+
+  top: 2px;
+  margin-right: 4px;
+  
+  font-size: 18px;
+  color: #777;
+  transition: 0.3s;
+}
+
+.icon-log-in::before
+{
+  font-family: 'Feather-Icons';
+  content: "\e988";
+}
