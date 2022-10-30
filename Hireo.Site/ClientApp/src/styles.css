@@ -1,8 +1,14 @@
+html,
+body
+{
+  height: 100%;
+}
+
 body
 {
   padding: 0;
   margin: 0;
-  
+
   font-family: "Nunito", Arial, sans-serif;
   text-transform: none;
 }
@@ -10,4 +16,15 @@ body
 a
 {
   text-decoration: none;
+}
+
+.navigation__dropdown
+{
+  background-color: #303030;
+}
+
+.navigation__dropdown .mat-menu-content
+{
+  display: flex;
+  flex-direction: column;
 }

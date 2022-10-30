@@ -53,14 +53,14 @@ header
   cursor: pointer;
 }
 
-#navigation a
+.navigation__item
 {
   padding: 7px 9px;
   color: #666;
   transition: 0.3s;
 }
 
-#navigation a::after
+.navigation__item.expandible::after
 {
   position: relative;
   top: 2px;
@@ -76,15 +76,27 @@ header
   transition: 0.3s;
 }
 
-#navigation li:hover a,
-#navigation li:hover a::after
+#navigation li:hover .navigation__item,
+#navigation li:hover .navigation__item::after
 {
   color: #2a41e8;
 }
 
-#navigation li:hover a::after
+#navigation li:hover .navigation__item::after
 {
   background-color: rgba(42, 65, 232, 0.13);
+}
+
+.navigation__item_inner
+{
+  color: #aaa;
+  margin: 5px 20px;
+  transition: 0.3s;
+}
+
+.navigation__item_inner:hover
+{
+  color: #fff;
 }
 
 .right-side

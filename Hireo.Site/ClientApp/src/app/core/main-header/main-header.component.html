@@ -5,11 +5,19 @@
     </div>
     <nav id="navigation">
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Find Work</a></li>
-        <li><a>For Employers</a></li>
-        <li><a>Dashboard</a></li>
-        <li><a>Pages</a></li>
+        <li><a class="navigation__item">Home</a></li>
+        <li><a class="navigation__item">Find Task</a></li>
+        <li><a class="navigation__item">Post a Task</a></li>
+        <li>
+          <a class="navigation__item expandible" [matMenuTriggerFor]="dashboard">Dashboard</a>
+          <mat-menu class="navigation__dropdown" #dashboard="matMenu">
+            <a class="navigation__item_inner">My Page</a>
+            <a class="navigation__item_inner">Messages</a>
+            <a class="navigation__item_inner">Reviews</a>
+            <a class="navigation__item_inner">Tasks</a>
+            <a class="navigation__item_inner">Settings</a>
+          </mat-menu>
+        </li>
       </ul>
     </nav>
   </div>
