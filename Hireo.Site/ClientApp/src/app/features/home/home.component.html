@@ -1,1 +1,41 @@
-<p>home works!</p>
+<section class="intro-banner">
+  <div class="container">
+    <div class="row">
+      <div class="banner-headline">
+        <h3>
+          <strong>Hire experts or be hired for any job, any time.</strong>
+          <br>
+          <span>
+            Thousands of small businesses use
+            <strong class="color">Hireo</strong>
+            to turn their ideas into reality.
+          </span>
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <form class="intro-banner__search-form" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        <div class="intro-banner__search-form_wrapper right-border">
+          <label for="search-input" class="intro-banner__field-title">What job you want?</label>
+          <mat-form-field class="intro-banner__search-form__form-field" appearance="legacy" [floatLabel]="'never'">
+            <mat-label class="intro-banner__search-form__label">Job Title or Keywords</mat-label>
+            <input id="search-input" matInput>
+          </mat-form-field>
+        </div>
+        <div class="intro-banner__search-form_wrapper">
+          <mat-form-field class="intro-banner__search-form__form-field" appearance="legacy">
+            <mat-select class="select" formControlName="select" disableOptionCentering>
+              <mat-option *ngFor="let val of values" [value]="val.index">{{val.v}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <button type="submit" mat-flat-button color="primary" class="intro-banner__search-form__button">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="background-image-container"></div>
+</section>
+
+<section class="popular-categories">
+
+</section>

@@ -8,7 +8,28 @@ body
 {
   padding: 0;
   margin: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input
+{
   font-family: "Nunito", Arial, sans-serif;
   text-transform: none;
 }
@@ -23,8 +44,62 @@ a
   background-color: #303030;
 }
 
+/* Переопределение стилей Angular Material */
+
 .navigation__dropdown .mat-menu-content
 {
   display: flex;
   flex-direction: column;
+}
+
+.mat-form-field
+{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.mat-form-field-wrapper
+{
+  padding: 0 !important;
+  flex: 1;
+}
+
+.mat-form-field-underline
+{
+  background: none !important;
+}
+
+.mat-form-field-infix
+{
+  border: none !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple
+{
+  background-color: transparent !important;
+  transition: none !important;
+}
+
+.mat-input-element
+{
+  caret-color: rgb(128, 128, 128) !important;
+}
+
+.mat-form-field,
+.mat-select,
+.mat-option
+{
+  font-family: "Nunito", Arial, sans-serif;
+  text-transform: none;
+}
+
+.mat-select-placeholder
+{
+  transition: none !important;
+}
+
+.mat-option,
+.mat-select-value
+{
+  color: #888 !important;
 }

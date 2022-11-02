@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from 'src/app/features/home/home.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { SettingsLayoutComponent } from './settings-layout/settings-layout.component';
 
@@ -12,7 +13,8 @@ const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('../../features/home/home.module').then((m) => m.HomeModule),
-          pathMatch: 'full'
+        pathMatch: 'full',
+        component: HomeComponent
       },
     ],
   },
@@ -31,8 +33,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: ''
-  }
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
