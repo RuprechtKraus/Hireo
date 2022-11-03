@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'src/app/features/home/home.component';
+import { LoginComponent } from 'src/app/features/login/login.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { SettingsLayoutComponent } from './settings-layout/settings-layout.component';
 
@@ -16,6 +17,12 @@ const routes: Routes = [
         pathMatch: 'full',
         component: HomeComponent
       },
+      {
+        path: 'login',
+        loadChildren: () => import('../../features/login/login.module').then((m) => m.LoginModule),
+        pathMatch: 'full',
+        component: LoginComponent
+      }
     ],
   },
   {

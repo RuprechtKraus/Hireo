@@ -19,6 +19,8 @@ h6
 {
   margin: 0;
   padding: 0;
+  color: #333;
+  font-weight: 500;
 }
 
 body,
@@ -36,7 +38,14 @@ input
 
 a
 {
+  transition: 0.3s;
   text-decoration: none;
+  color: #2a41e8;
+}
+
+a:hover
+{
+  color: #333;
 }
 
 .navigation__dropdown
@@ -56,6 +65,7 @@ a
 {
   display: flex !important;
   align-items: center !important;
+  width: 100%;
 }
 
 .mat-form-field-wrapper
@@ -78,6 +88,16 @@ a
 {
   background-color: transparent !important;
   transition: none !important;
+}
+
+.mat-form-field label
+{
+  color: #888 !important;
+}
+
+.mat-form-field input
+{
+  color: #666 !important;
 }
 
 .mat-input-element

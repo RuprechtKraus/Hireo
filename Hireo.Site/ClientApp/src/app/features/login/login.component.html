@@ -1,0 +1,35 @@
+<div id="titlebar">
+  <div class="container">
+    <div class="row">
+      <h2 class="titlebar__title">Log In</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="login-container">
+      <div class="welcome-text">
+        <h3 class="welcome-text__header">We're glad to see you again!</h3>
+        <span class="welcome-text__sign-up">
+          Don't have an account?
+          <a href="#">Sign up!</a>
+        </span>
+      </div>
+      <form id="login-container__login-form" method="post">
+        <div class="login-container__input_wrapper">
+          <mat-form-field appearance="legacy" [floatLabel]="'never'">
+            <mat-label>Email Address</mat-label>
+            <input type="email" id="email" matInput>
+          </mat-form-field>
+        </div>
+        <div class="login-container__input_wrapper">
+          <mat-form-field appearance="legacy" [floatLabel]="'never'">
+            <mat-label>Password</mat-label>
+            <input type="password" id="password" matInput>
+          </mat-form-field>
+        </div>
+        <button type="submit" mat-flat-button color="primary" class="login-container__login-form__submit">Log In</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -52,13 +52,6 @@
   overflow: hidden;
 }
 
-.row
-{
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .banner-headline
 {
   max-width: 55%;
@@ -97,7 +90,6 @@
   display: flex;
   align-items: center;
   flex: 1;
-  color: #666;
 }
 
 .intro-banner__search-form_wrapper.right-border
@@ -121,12 +113,6 @@
 {
   padding: 20px 27px;
   flex: 1;
-  color: #666;
-}
-
-.intro-banner__search-form__label
-{
-  color: #888;
 }
 
 .intro-banner__field-title

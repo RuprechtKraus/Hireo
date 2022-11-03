@@ -13,5 +13,12 @@
   margin-right: auto;
   margin-left: auto;
 
+  box-sizing: border-box;
   z-index: 100;
+}
+
+.row
+{
+  position: relative;
+  width: 100%;
 }
