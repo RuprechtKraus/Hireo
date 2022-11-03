@@ -1,8 +1,7 @@
-@import url('../../core/layout/main-layout/main-layout.component.css');
+@import url('../../../core/layout/main-layout/main-layout.component.css');
 
 #titlebar
 {
-  /* padding-top: 70px; */
   padding-top: 150px;
   margin-bottom: 65px;
 }
