@@ -36,6 +36,23 @@ input
   text-transform: none;
 }
 
+input
+{
+  caret-color: rgb(128, 128, 128);
+  padding: 0;
+}
+
+input:focus
+{
+  outline: none;
+}
+
+input::placeholder
+{
+  color: #808080;
+  opacity: 1;
+}
+
 a
 {
   transition: 0.3s;

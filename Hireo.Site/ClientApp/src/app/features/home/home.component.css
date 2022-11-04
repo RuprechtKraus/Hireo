@@ -97,6 +97,24 @@
   border-right: 1px solid #e4e4e4;
 }
 
+.intro-banner__input
+{
+  width: 528px;
+  padding: 20px 27px;
+
+  border: none;
+  border-right: 1px solid #e4e4e4;
+  box-sizing: border-box;
+
+  font-size: 18px;
+}
+
+.intro-banner_search-form_button-wrapper
+{
+  display: flex;
+  height: 100%;
+}
+
 .intro-banner__search-form
 {
   display: flex;

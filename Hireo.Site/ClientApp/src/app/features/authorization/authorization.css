@@ -55,6 +55,23 @@
   background-color: white;
 }
 
+.login-register-container__input
+{
+  height: 48px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.05);
+  color: #666;
+  box-sizing: border-box;
+  background-color: white;
+}
+
 .login-register-container__form__submit
 {
   width: 100%;
