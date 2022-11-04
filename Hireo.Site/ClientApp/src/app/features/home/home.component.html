@@ -15,13 +15,8 @@
     </div>
     <div class="row">
       <form class="intro-banner__search-form" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
-        <div class="intro-banner__search-form_wrapper right-border">
-          <label for="search-input" class="intro-banner__field-title">What job you want?</label>
-          <mat-form-field class="intro-banner__search-form__form-field" appearance="legacy" [floatLabel]="'never'">
-            <mat-label>Job Title or Keywords</mat-label>
-            <input id="search-input" matInput>
-          </mat-form-field>
-        </div>
+        <label for="search-input" class="intro-banner__field-title">What job you want?</label>
+        <input id="search-input" class="intro-banner__input right-border" placeholder="Job Title or Keywords">
         <div class="intro-banner__search-form_wrapper">
           <mat-form-field class="intro-banner__search-form__form-field" appearance="legacy">
             <mat-select class="select" formControlName="select" disableOptionCentering>
@@ -29,7 +24,11 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <button type="submit" mat-flat-button color="primary" class="intro-banner__search-form__button">Search</button>
+        <div class="intro-banner_search-form_button-wrapper">
+          <button type="submit" mat-flat-button color="primary" class="intro-banner__search-form__button">
+            Search
+          </button>
+        </div>
       </form>
     </div>
   </div>

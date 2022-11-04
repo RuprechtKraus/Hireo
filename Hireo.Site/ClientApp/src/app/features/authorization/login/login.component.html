@@ -15,20 +15,13 @@
           <a routerLink="/registration">Sign up!</a>
         </span>
       </div>
-      <form id="login-register-container__form" method="post">
-        <div class="login-register-container__input_wrapper">
-          <mat-form-field appearance="legacy" [floatLabel]="'never'">
-            <mat-label>Email Address</mat-label>
-            <input type="email" id="email" matInput>
-          </mat-form-field>
-        </div>
-        <div class="login-register-container__input_wrapper">
-          <mat-form-field appearance="legacy" [floatLabel]="'never'">
-            <mat-label>Password</mat-label>
-            <input type="password" id="password" matInput>
-          </mat-form-field>
-        </div>
-        <button type="submit" mat-flat-button color="primary" class="login-register-container__form__submit">
+      <form id="login-register-container__form" method="post" [formGroup]="loginForm">
+        <input class="login-register-container__input" placeholder="Email Address" type="email" id="email"
+          formControlName="email">
+        <input class="login-register-container__input" placeholder="Password" type="password" id="password"
+          formControlName="password">
+        <button type="submit" mat-flat-button color="primary" class="login-register-container__form__submit"
+          (click)="onSubmit()">
           Log In
         </button>
       </form>
