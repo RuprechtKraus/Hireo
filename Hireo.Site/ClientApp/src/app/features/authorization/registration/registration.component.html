@@ -1,7 +1,7 @@
 <div id="titlebar">
   <div class="container">
     <div class="row">
-      <h2 class="titlebar__title">Log In</h2>
+      <h2 class="titlebar__title">Register</h2>
     </div>
   </div>
 </div>
@@ -9,10 +9,10 @@
   <div class="row">
     <div class="login-register-container">
       <div class="welcome-text">
-        <h3 class="welcome-text__header">We're glad to see you again!</h3>
+        <h3 class="welcome-text__header">Let's create your account!</h3>
         <span>
-          Don't have an account?
-          <a routerLink="/registration">Sign up!</a>
+          Already have an account?
+          <a routerLink="/login">Log In!</a>
         </span>
       </div>
       <form id="login-register-container__form" method="post">
@@ -28,8 +28,14 @@
             <input type="password" id="password" matInput>
           </mat-form-field>
         </div>
+        <div class="login-register-container__input_wrapper">
+          <mat-form-field appearance="legacy" [floatLabel]="'never'">
+            <mat-label>Repeat Password</mat-label>
+            <input type="password" id="password" matInput>
+          </mat-form-field>
+        </div>
         <button type="submit" mat-flat-button color="primary" class="login-register-container__form__submit">
-          Log In
+          Register
         </button>
       </form>
     </div>
