@@ -1,11 +1,11 @@
 <header id="header">
   <div class="left-side">
     <div id="logo">
-      <img src="../../../assets/logo.png">
+      <img src="../../../assets/logo.png" routerLink="/">
     </div>
     <nav id="navigation">
       <ul>
-        <li><a class="navigation__item">Home</a></li>
+        <li><a class="navigation__item" routerLink="/">Home</a></li>
         <li><a class="navigation__item">Find Task</a></li>
         <li><a class="navigation__item">Post a Task</a></li>
         <li>
@@ -23,11 +23,12 @@
   </div>
   <div class="right-side">
     <div class="header-widget">
-      <a class="log-in-button">
+      <a class="log-in-button" routerLink="/login">
         <span class="icon-log-in"></span>
         <span>
           Log In / Register
-        </span></a>
+        </span>
+      </a>
     </div>
   </div>
 </header>
