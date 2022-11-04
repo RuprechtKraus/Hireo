@@ -16,10 +16,10 @@
         </span>
       </div>
       <form id="login-register-container__form" method="post" [formGroup]="loginForm">
-        <input class="login-register-container__input" placeholder="Email Address" type="email" id="email"
-          formControlName="email">
-        <input class="login-register-container__input" placeholder="Password" type="password" id="password"
-          formControlName="password">
+        <input id="email" class="login-register-container__input" placeholder="Email Address" type="email"
+          [ngClass]="{ 'invalid': submitted && !isControlValid('email') }" formControlName="email">
+        <input id="password" class="login-register-container__input" placeholder="Password" type="password"
+          maxlength="32" [ngClass]="{ 'invalid': submitted && !isControlValid('password') }" formControlName="password">
         <button type="submit" mat-flat-button color="primary" class="login-register-container__form__submit"
           (click)="onSubmit()">
           Log In
